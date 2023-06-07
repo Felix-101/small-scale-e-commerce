@@ -1,0 +1,18 @@
+<%- include('../includes/head.ejs')%>
+</head>
+<body>
+    
+<%- include('../includes/navigation.ejs')%>
+<main class="center">
+
+            <h1><%=pro.title%></h1>
+            <hr>
+            <div>
+                <img src="<%=pro.imageUrl%>" alt="<%=pro.title%>">
+            </div>
+            <h2><%=pro.price%></h2>
+            <p><%=pro.description%></p>
+            <!-- pro is the name of the key in the controller -->
+            <%- include('../includes/add-to-cart.ejs')%>
+</main>
+<%-include('../includes/end.ejs')%>
